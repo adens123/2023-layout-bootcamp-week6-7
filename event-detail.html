@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>活動詳情 | 活動訂票網</title>
+    <script type="module" crossorigin src="/2023-layout-bootcamp-week6-7/assets/main-0906e6a3.js"></script>
+    <link rel="stylesheet" href="/2023-layout-bootcamp-week6-7/assets/main-3ea78f31.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container">
+    <nav class="navbar navbar-expand-md position-static py-3 py-md-6">
+      <div
+        class="d-flex justify-content-between justify-content-md-start w-100">
+        <!-- header logo & title -->
+        <a class="d-flex align-items-center me-md-12" href="./index.html">
+          <img
+            class="header-img img-fluid me-lg-4"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABqCAYAAABUIcSXAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATESURBVHgB7Z0xTFNRFIYvtBo0xldDjCEOJXFwk0Gjmw4aNnUgsukgkUkcCGyEwbhpHIAJooOOxgHYTBx0w+hQNxOH1sQQVLRFo0RRvP+jr719YGmxlPufnC8x9jXPBt/HOfeccx+PlkQisWoU72k1CgUqigQVRUIy/sbyStooO09bMldxrBFFgooiQUWRoKJIUFEkqCgSVBQJKooEFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJIgTlcn8NLnsipGGOFGF/B/z2sqSRtIIA5JWTYuRhjhRuexvI/GnHsSJyubkrU9AnCisUfgjDXmpDxElMPcJXKNkpj5R5bmb8qQJEyVKaiEB5EaUMGnCRJWrCPRTkhAlKi+wLI+QFVGFchTlC7KkeS+qnijJO6mv1qYXn88Qid6Lwnj15PF58/zZsmkkkHPrZsF0n10wqZT/icX7rzCwF/HCxT3hBR0e/FL1XLd3qtZHQfqpE/NWVN7cuXvAMECxRg3c2G/SnUkzPrZkjh55/1/N7IT9DEjHZ1y3n3v6TJthgEIUomrqXnv4Gv0RomFm+oepl2tXF81QMSrT6SRNNAGaqg/f+beLFxbrS2/Ph3CNcXGbXLfqw/mIoocPvoXHWJOePD1kmKAqz5ECL1/ZVzrGGhOXFeFWff19ixXFyKSNTqRSJuj6qKn77RXrSjVZAAXIzPT30vHIaMoWJ3sNG5QN76PHBysuNmSNj31dd97a+0ulY0gaGQ0MIy3xBysyPbQK0eKKqAabJFEPrUJxUcvFr/U8n/FmRY16I1Ru0eS7UCiPd9zeCRVdPfdFzNpSftYp51Gal14XiwpUgkHQGrYCqVRL+DfO82Vq0bTUhwudyfwy76yIrH29JmQllOH7bixkQlokr9MeH+vaFR53de0228GOpT4IwXdqdOcJXjHM2CIQ2eXbOlfDiE4Fzfv6vSkmcCEQbfni7V6YhGPbIpqIV8zxYru3mw1s3XI+SnER5dRn012QKL6XKKXHneq34hHlzRqVCteG+tMIZne1iGIvJqirPvRJQ5tM1KPzhms4z2doRcUnEuiT3BTnzgYB+q1LPR9pt+spRcUlYbtio9Q2EHt/1o6Seq0sRuhEYXvDlYRRUrXtivhEAusZtjvYoBKFyq+/71PpGOltsrhPBYJ/lPtxWdju2Gg26DNUorrPLZTWGGx3YE/J7cXcvsadPgDIwjA3On948HPD78PYTmhEoWqLeikUCdjuqJfzNk3Ovewo9UZIgSzFBYUofOejakOUIIpQJGwVSHrz9nD4GWicJ0hSIIUo9EpYY+ZedVS9GcWdImw2UUBUQjo2FRmiyvv9aIyT4mtRo4D0F1a+imoAQR2C1oa+W/l3egNmU4mGqqCZk+1mIPYRO250SUCUKGxPRAREe121IEuU0+SqKBLikwl2hKW+shymbf5aEPeciVCWPhDEf3A/hLRoAjIjSiDi/ledtojQx8ARgF5KH6xIQDqNO1jliRK36ka3GkuD+sduJKO/K54UFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJKgoElQUCSqKBBVFgooiQUWRoKJIWHcXkuInGlEkqCgSVBQJfwFJWMcKLx/BoQAAAABJRU5ErkJggg=="
+            alt="logo" />
+          <h1 class="d-none d-lg-flex align-items-center">
+            <span class="eng-title fw-normal me-1 my-fs-8">7TAO</span>
+            <small class="my-fs-4 text-nowrap">活動訂票網</small>
+          </h1>
+        </a>
+        <!-- search bar -->
+        <div class="input-group">
+          <input
+            class="form-control border border-2 border-primary px-3 py-2 px-md-6 py-md-4"
+            type="search"
+            placeholder="探索活動" />
+          <button type="button" class="btn-search px-3 py-2 p-md-4" href="#">
+            <i class="icofont-search-1"></i>
+          </button>
+        </div>
+        <!-- hamburger button -->
+        <button
+          class="navbar-toggler px-3 py-1 border-primary rounded-1"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarhamburger">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <!-- hamburger menu -->
+      <div
+        class="collapse navbar-collapse py-4 p-md-0 mt-md-0"
+        id="navbarhamburger">
+        <ul class="container login navbar-nav eng-title px-3 pe-md-0">
+          <li class="nav-item">
+            <a
+              class="nav-link me-6"
+              href="#registerModal"
+              data-bs-toggle="modal"
+              ><i class="icofont-ui-file me-1"></i>REGISTER</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./login.html"
+              ><i class="icofont-ui-user me-1"></i>LOGIN</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Register Modal -->
+    <div class="modal register-modal fade" id="registerModal" tabindex="-1">
+      <div class="modal-dialog" style="max-width: 636px">
+        <div class="modal-content">
+          <div class="modal-header border-primary border-3">
+            <h1 class="modal-title my-fs-6 mx-auto">立刻成為7TAO會員</h1>
+            <button
+              type="button"
+              class="btn-close ms-0"
+              data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body py-8 py-md-12 text-center">
+            <p class="mb-6">
+              立刻成為七逃會員，加速活動報名流程並取得活動優惠資訊。<br />
+              您也可以先報名活動，日後再註冊帳號，<br />
+              系統會在認證您的Email後，協助您找回舊的訂單。
+            </p>
+
+            <button
+              type="button"
+              class="btn btn-primary my-fs-5 fw-bold py-2 px-8">
+              立刻成為會員
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+    <main class="container">
+      <h1>施工中</h1>
+      <h1>施工中</h1>
+      <h1>施工中</h1>
+      <h1>施工中</h1>
+      <h1>施工中</h1>
+    </main>
+
+    <footer
+  class="footer d-flex justify-content-center py-6 py-md-8 border-top border-3 border-primary">
+  <p class="footer-text">© 7TAO七逃. All Rights Reserved</p>
+</footer>
+
+
+    
+  </body>
+</html>

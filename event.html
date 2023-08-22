@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EVENT 所有活動 | 活動訂票網</title>
+    <script type="module" crossorigin src="/2023-layout-bootcamp-week6-7/assets/main-0906e6a3.js"></script>
+    <link rel="stylesheet" href="/2023-layout-bootcamp-week6-7/assets/main-3ea78f31.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container">
+    <nav class="navbar navbar-expand-md position-static py-3 py-md-6">
+      <div
+        class="d-flex justify-content-between justify-content-md-start w-100">
+        <!-- header logo & title -->
+        <a class="d-flex align-items-center me-md-12" href="./index.html">
+          <img
+            class="header-img img-fluid me-lg-4"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABqCAYAAABUIcSXAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATESURBVHgB7Z0xTFNRFIYvtBo0xldDjCEOJXFwk0Gjmw4aNnUgsukgkUkcCGyEwbhpHIAJooOOxgHYTBx0w+hQNxOH1sQQVLRFo0RRvP+jr719YGmxlPufnC8x9jXPBt/HOfeccx+PlkQisWoU72k1CgUqigQVRUIy/sbyStooO09bMldxrBFFgooiQUWRoKJIUFEkqCgSVBQJKooEFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJIgTlcn8NLnsipGGOFGF/B/z2sqSRtIIA5JWTYuRhjhRuexvI/GnHsSJyubkrU9AnCisUfgjDXmpDxElMPcJXKNkpj5R5bmb8qQJEyVKaiEB5EaUMGnCRJWrCPRTkhAlKi+wLI+QFVGFchTlC7KkeS+qnijJO6mv1qYXn88Qid6Lwnj15PF58/zZsmkkkHPrZsF0n10wqZT/icX7rzCwF/HCxT3hBR0e/FL1XLd3qtZHQfqpE/NWVN7cuXvAMECxRg3c2G/SnUkzPrZkjh55/1/N7IT9DEjHZ1y3n3v6TJthgEIUomrqXnv4Gv0RomFm+oepl2tXF81QMSrT6SRNNAGaqg/f+beLFxbrS2/Ph3CNcXGbXLfqw/mIoocPvoXHWJOePD1kmKAqz5ECL1/ZVzrGGhOXFeFWff19ixXFyKSNTqRSJuj6qKn77RXrSjVZAAXIzPT30vHIaMoWJ3sNG5QN76PHBysuNmSNj31dd97a+0ulY0gaGQ0MIy3xBysyPbQK0eKKqAabJFEPrUJxUcvFr/U8n/FmRY16I1Ru0eS7UCiPd9zeCRVdPfdFzNpSftYp51Gal14XiwpUgkHQGrYCqVRL+DfO82Vq0bTUhwudyfwy76yIrH29JmQllOH7bixkQlokr9MeH+vaFR53de0228GOpT4IwXdqdOcJXjHM2CIQ2eXbOlfDiE4Fzfv6vSkmcCEQbfni7V6YhGPbIpqIV8zxYru3mw1s3XI+SnER5dRn012QKL6XKKXHneq34hHlzRqVCteG+tMIZne1iGIvJqirPvRJQ5tM1KPzhms4z2doRcUnEuiT3BTnzgYB+q1LPR9pt+spRcUlYbtio9Q2EHt/1o6Seq0sRuhEYXvDlYRRUrXtivhEAusZtjvYoBKFyq+/71PpGOltsrhPBYJ/lPtxWdju2Gg26DNUorrPLZTWGGx3YE/J7cXcvsadPgDIwjA3On948HPD78PYTmhEoWqLeikUCdjuqJfzNk3Ovewo9UZIgSzFBYUofOejakOUIIpQJGwVSHrz9nD4GWicJ0hSIIUo9EpYY+ZedVS9GcWdImw2UUBUQjo2FRmiyvv9aIyT4mtRo4D0F1a+imoAQR2C1oa+W/l3egNmU4mGqqCZk+1mIPYRO250SUCUKGxPRAREe121IEuU0+SqKBLikwl2hKW+shymbf5aEPeciVCWPhDEf3A/hLRoAjIjSiDi/ledtojQx8ARgF5KH6xIQDqNO1jliRK36ka3GkuD+sduJKO/K54UFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJKgoElQUCSqKBBVFgooiQUWRoKJIWHcXkuInGlEkqCgSVBQJfwFJWMcKLx/BoQAAAABJRU5ErkJggg=="
+            alt="logo" />
+          <h1 class="d-none d-lg-flex align-items-center">
+            <span class="eng-title fw-normal me-1 my-fs-8">7TAO</span>
+            <small class="my-fs-4 text-nowrap">活動訂票網</small>
+          </h1>
+        </a>
+        <!-- search bar -->
+        <div class="input-group">
+          <input
+            class="form-control border border-2 border-primary px-3 py-2 px-md-6 py-md-4"
+            type="search"
+            placeholder="探索活動" />
+          <button type="button" class="btn-search px-3 py-2 p-md-4" href="#">
+            <i class="icofont-search-1"></i>
+          </button>
+        </div>
+        <!-- hamburger button -->
+        <button
+          class="navbar-toggler px-3 py-1 border-primary rounded-1"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarhamburger">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <!-- hamburger menu -->
+      <div
+        class="collapse navbar-collapse py-4 p-md-0 mt-md-0"
+        id="navbarhamburger">
+        <ul class="container login navbar-nav eng-title px-3 pe-md-0">
+          <li class="nav-item">
+            <a
+              class="nav-link me-6"
+              href="#registerModal"
+              data-bs-toggle="modal"
+              ><i class="icofont-ui-file me-1"></i>REGISTER</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./login.html"
+              ><i class="icofont-ui-user me-1"></i>LOGIN</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Register Modal -->
+    <div class="modal register-modal fade" id="registerModal" tabindex="-1">
+      <div class="modal-dialog" style="max-width: 636px">
+        <div class="modal-content">
+          <div class="modal-header border-primary border-3">
+            <h1 class="modal-title my-fs-6 mx-auto">立刻成為7TAO會員</h1>
+            <button
+              type="button"
+              class="btn-close ms-0"
+              data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body py-8 py-md-12 text-center">
+            <p class="mb-6">
+              立刻成為七逃會員，加速活動報名流程並取得活動優惠資訊。<br />
+              您也可以先報名活動，日後再註冊帳號，<br />
+              系統會在認證您的Email後，協助您找回舊的訂單。
+            </p>
+
+            <button
+              type="button"
+              class="btn btn-primary my-fs-5 fw-bold py-2 px-8">
+              立刻成為會員
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+    <main class="container">
+      <!-- topic -->
+      <h2 data-aos="fade-up" class="topic mt-4 mb-3 my-md-8">
+  EVENT<small class="topic-subtitle">所有活動</small>
+</h2>
+
+
+      <!-- tags -->
+      <div class="d-flex flex-wrap gap-2 mb-8">
+        
+<a
+  class="badge badge-tag serif-title py-1 px-4 px-md-6 border border-black border-1"
+  href="#">
+  演出
+</a>
+
+
+<a
+  class="badge badge-tag serif-title py-1 px-4 px-md-6 border border-black border-1"
+  href="#">
+  音樂
+</a>
+
+
+<a
+  class="badge badge-tag serif-title py-1 px-4 px-md-6 border border-black border-1"
+  href="#">
+  舞蹈
+</a>
+
+
+<a
+  class="badge badge-tag serif-title py-1 px-4 px-md-6 border border-black border-1"
+  href="#">
+  戲劇
+</a>
+
+
+<a
+  class="badge badge-tag serif-title py-1 px-4 px-md-6 border border-black border-1"
+  href="#">
+  音樂會
+</a>
+
+
+<a
+  class="badge badge-tag serif-title py-1 px-4 px-md-6 border border-black border-1"
+  href="#">
+  課程講座
+</a>
+
+
+<a
+  class="badge badge-tag serif-title py-1 px-4 px-md-6 border border-black border-1"
+  href="#">
+  社群活動
+</a>
+
+
+<a
+  class="badge badge-tag serif-title py-1 px-4 px-md-6 border border-black border-1"
+  href="#">
+  展覽
+</a>
+
+
+<a
+  class="badge badge-tag serif-title py-1 px-4 px-md-6 border border-black border-1"
+  href="#">
+  研討會
+</a>
+
+
+<a
+  class="badge badge-tag serif-title py-1 px-4 px-md-6 border border-black border-1"
+  href="#">
+  電影
+</a>
+
+
+<a
+  class="badge badge-tag serif-title py-1 px-4 px-md-6 border border-black border-1"
+  href="#">
+  電音派對
+</a>
+
+
+<a
+  class="badge badge-tag serif-title py-1 px-4 px-md-6 border border-black border-1"
+  href="#">
+  遊戲競賽
+</a>
+
+
+<a
+  class="badge badge-tag serif-title py-1 px-4 px-md-6 border border-black border-1"
+  href="#">
+  親子
+</a>
+
+
+<a
+  class="badge badge-tag serif-title py-1 px-4 px-md-6 border border-black border-1"
+  href="#">
+  藝文活動
+</a>
+
+
+<a
+  class="badge badge-tag serif-title py-1 px-4 px-md-6 border border-black border-1"
+  href="#">
+  運動
+</a>
+
+
+<a
+  class="badge badge-tag serif-title py-1 px-4 px-md-6 border border-black border-1"
+  href="#">
+  交通旅遊
+</a>
+
+
+<a
+  class="badge badge-tag serif-title py-1 px-4 px-md-6 border border-black border-1"
+  href="#">
+  美食
+</a>
+
+
+<a
+  class="badge badge-tag serif-title py-1 px-4 px-md-6 border border-black border-1"
+  href="#">
+  資訊科技
+</a>
+
+
+<a
+  class="badge badge-tag serif-title py-1 px-4 px-md-6 border border-black border-1"
+  href="#">
+  聯誼
+</a>
+
+
+<a
+  class="badge badge-tag serif-title py-1 px-4 px-md-6 border border-black border-1"
+  href="#">
+  戶外
+</a>
+
+
+<a
+  class="badge badge-tag serif-title py-1 px-4 px-md-6 border border-black border-1"
+  href="#">
+  線上活動
+</a>
+
+
+
+      </div>
+
+      <!-- events -->
+      <section>
+        <ul class="row list-unstyled gy-6 gy-md-12">
+          
+
+<!-- render data -->
+
+ <li data-aos="fade-up" class="col-md-4">
+  <a class="card activity-card border-0 h-100" href="./event-detail.html">
+    <h4 class="eng-title my-fs-8 my-fs-xl-12 mb-2 mb-md-3">19 MAY 2023</h4>
+    <hr class="border border-primary border-3 opacity-100 mb-4 mb-md-3" />
+    <img
+      class="card-img object-fit-cover mb-2 mb-md-3"
+      src="/2023-layout-bootcamp-week6-7/assets/01-14f95265.jpg"
+      alt="event picture" />
+
+    <h5 class="card-title mb-2 mb-md-3">邪典電影派對——房間</h5>
+
+    <p class="mb-auto pb-4">你有聽說過「大災難家」裡面的主角 Tommy
+Wiseau
+製作的「史上最爛的電影」——房間嗎？在美國甚至演變成一種邪教、一種派對的形式，在電影播放的對著螢幕丟湯匙都...</p>
+
+    <div
+      class="d-flex justify-content-between py-2 py-md-3 border-top border-bottom border-primary border-2">
+      <button
+        type="button"
+        class="d-flex align-items-center border-0 bg-transparent">
+        <i class="me-1 icofont-star-alt-1 my-fs-5 my-fs-md-6"></i>
+        <span class="activity-card-cate serif-title">社群活動</span>
+      </button>
+
+      <button
+        type="button"
+        class="regModalBtn d-flex align-items-center border-0 bg-transparent position-relative">
+        <span class="activity-card-state me-1">開賣中</span>
+        <i class="icofont-rounded-double-right"></i>
+      </button>
+    </div>
+  </a>
+</li>
+  <li data-aos="fade-up" class="col-md-4">
+  <a class="card activity-card border-0 h-100" href="./event-detail.html">
+    <h4 class="eng-title my-fs-8 my-fs-xl-12 mb-2 mb-md-3">23 MAY 2023</h4>
+    <hr class="border border-primary border-3 opacity-100 mb-4 mb-md-3" />
+    <img
+      class="card-img object-fit-cover mb-2 mb-md-3"
+      src="/2023-layout-bootcamp-week6-7/assets/02-c8a7e0c0.jpg"
+      alt="event picture" />
+
+    <h5 class="card-title mb-2 mb-md-3">怪舞俱樂部</h5>
+
+    <p class="mb-auto pb-4">覺得自己的舞蹈細胞異於常人？每次隨著音樂起舞身邊的人總是露出無法理解的表情？來這裡就對了！來參加這場一起跳舞的聚會，也會在每一次的舞會中選出舞步最怪的...</p>
+
+    <div
+      class="d-flex justify-content-between py-2 py-md-3 border-top border-bottom border-primary border-2">
+      <button
+        type="button"
+        class="d-flex align-items-center border-0 bg-transparent">
+        <i class="me-1 icofont-star-alt-1 my-fs-5 my-fs-md-6"></i>
+        <span class="activity-card-cate serif-title">演出</span>
+      </button>
+
+      <button
+        type="button"
+        class="regModalBtn d-flex align-items-center border-0 bg-transparent position-relative">
+        <span class="activity-card-state me-1">檢視活動</span>
+        <i class="icofont-rounded-double-right"></i>
+      </button>
+    </div>
+  </a>
+</li>
+  <li data-aos="fade-up" class="col-md-4">
+  <a class="card activity-card border-0 h-100" href="./event-detail.html">
+    <h4 class="eng-title my-fs-8 my-fs-xl-12 mb-2 mb-md-3">30 MAY 2023</h4>
+    <hr class="border border-primary border-3 opacity-100 mb-4 mb-md-3" />
+    <img
+      class="card-img object-fit-cover mb-2 mb-md-3"
+      src="/2023-layout-bootcamp-week6-7/assets/03-4a045f0e.jpg"
+      alt="event picture" />
+
+    <h5 class="card-title mb-2 mb-md-3">哈利波特馬拉松</h5>
+
+    <p class="mb-auto pb-4">每次身邊有人開啟哈利波特的話題，自己永遠都是聽不懂的那個麻瓜？看大家在討論魁地奇、用咒語鬥法的時候，自己永遠是陪笑的那個人？穿好你的法袍、帶上你的法杖...</p>
+
+    <div
+      class="d-flex justify-content-between py-2 py-md-3 border-top border-bottom border-primary border-2">
+      <button
+        type="button"
+        class="d-flex align-items-center border-0 bg-transparent">
+        <i class="me-1 icofont-star-alt-1 my-fs-5 my-fs-md-6"></i>
+        <span class="activity-card-cate serif-title">聯誼</span>
+      </button>
+
+      <button
+        type="button"
+        class="regModalBtn d-flex align-items-center border-0 bg-transparent position-relative">
+        <span class="activity-card-state me-1">開賣中</span>
+        <i class="icofont-rounded-double-right"></i>
+      </button>
+    </div>
+  </a>
+</li>
+  <li data-aos="fade-up" class="col-md-4">
+  <a class="card activity-card border-0 h-100" href="./event-detail.html">
+    <h4 class="eng-title my-fs-8 my-fs-xl-12 mb-2 mb-md-3">12 MAY 2023</h4>
+    <hr class="border border-primary border-3 opacity-100 mb-4 mb-md-3" />
+    <img
+      class="card-img object-fit-cover mb-2 mb-md-3"
+      src="/2023-layout-bootcamp-week6-7/assets/04-d0eeb0aa.jpg"
+      alt="event picture" />
+
+    <h5 class="card-title mb-2 mb-md-3">皮卡丘排球大賽</h5>
+
+    <p class="mb-auto pb-4">還記得小時候玩的小遊戲嗎？總是有朋友吹噓自己獨孤求敗、只求一敗？是時候該展現真正的實力了！本活動採用瑞士制賽程，以絕對公平的方式進行，是時候該證明自己...</p>
+
+    <div
+      class="d-flex justify-content-between py-2 py-md-3 border-top border-bottom border-primary border-2">
+      <button
+        type="button"
+        class="d-flex align-items-center border-0 bg-transparent">
+        <i class="me-1 icofont-star-alt-1 my-fs-5 my-fs-md-6"></i>
+        <span class="activity-card-cate serif-title">遊戲競賽</span>
+      </button>
+
+      <button
+        type="button"
+        class="regModalBtn d-flex align-items-center border-0 bg-transparent position-relative">
+        <span class="activity-card-state me-1">開賣中</span>
+        <i class="icofont-rounded-double-right"></i>
+      </button>
+    </div>
+  </a>
+</li>
+  <li data-aos="fade-up" class="col-md-4">
+  <a class="card activity-card border-0 h-100" href="./event-detail.html">
+    <h4 class="eng-title my-fs-8 my-fs-xl-12 mb-2 mb-md-3">25 MAY 2023</h4>
+    <hr class="border border-primary border-3 opacity-100 mb-4 mb-md-3" />
+    <img
+      class="card-img object-fit-cover mb-2 mb-md-3"
+      src="/2023-layout-bootcamp-week6-7/assets/05-6c2604a6.jpg"
+      alt="event picture" />
+
+    <h5 class="card-title mb-2 mb-md-3">酒精路跑</h5>
+
+    <p class="mb-auto pb-4">身邊總是有對自己酒量有高度自信的朋友嗎？拉著他/她一起來參加酒精路跑吧！一起拍下第一杯直到倒下為止的照片，一起喝遍市區內各家極具品味的酒吧。</p>
+
+    <div
+      class="d-flex justify-content-between py-2 py-md-3 border-top border-bottom border-primary border-2">
+      <button
+        type="button"
+        class="d-flex align-items-center border-0 bg-transparent">
+        <i class="me-1 icofont-star-alt-1 my-fs-5 my-fs-md-6"></i>
+        <span class="activity-card-cate serif-title">社群活動</span>
+      </button>
+
+      <button
+        type="button"
+        class="regModalBtn d-flex align-items-center border-0 bg-transparent position-relative">
+        <span class="activity-card-state me-1">開賣中</span>
+        <i class="icofont-rounded-double-right"></i>
+      </button>
+    </div>
+  </a>
+</li>
+  <li data-aos="fade-up" class="col-md-4">
+  <a class="card activity-card border-0 h-100" href="./event-detail.html">
+    <h4 class="eng-title my-fs-8 my-fs-xl-12 mb-2 mb-md-3">9 MAY 2023</h4>
+    <hr class="border border-primary border-3 opacity-100 mb-4 mb-md-3" />
+    <img
+      class="card-img object-fit-cover mb-2 mb-md-3"
+      src="/2023-layout-bootcamp-week6-7/assets/06-8506c593.jpg"
+      alt="event picture" />
+
+    <h5 class="card-title mb-2 mb-md-3">展覽——我的房間</h5>
+
+    <p class="mb-auto pb-4">每個人的房間總會有那麼一兩個能代表自己的物事，或許是再平凡不過的牙刷、馬克杯，或許有那些別人的房間從沒出現過的小東西——那些能定義自己的特別的東西。</p>
+
+    <div
+      class="d-flex justify-content-between py-2 py-md-3 border-top border-bottom border-primary border-2">
+      <button
+        type="button"
+        class="d-flex align-items-center border-0 bg-transparent">
+        <i class="me-1 icofont-star-alt-1 my-fs-5 my-fs-md-6"></i>
+        <span class="activity-card-cate serif-title">展覽</span>
+      </button>
+
+      <button
+        type="button"
+        class="regModalBtn d-flex align-items-center border-0 bg-transparent position-relative">
+        <span class="activity-card-state me-1">開賣中</span>
+        <i class="icofont-rounded-double-right"></i>
+      </button>
+    </div>
+  </a>
+</li>
+  <li data-aos="fade-up" class="col-md-4">
+  <a class="card activity-card border-0 h-100" href="./event-detail.html">
+    <h4 class="eng-title my-fs-8 my-fs-xl-12 mb-2 mb-md-3">19 MAY 2023</h4>
+    <hr class="border border-primary border-3 opacity-100 mb-4 mb-md-3" />
+    <img
+      class="card-img object-fit-cover mb-2 mb-md-3"
+      src="/2023-layout-bootcamp-week6-7/assets/07-a88d4376.jpg"
+      alt="event picture" />
+
+    <h5 class="card-title mb-2 mb-md-3">野營音樂祭</h5>
+
+    <p class="mb-auto pb-4">喜歡山水、喜歡音樂嗎？一起在溪邊來場浪漫的沉浸式森林活動吧！結合四大戶外探索類別、超過
+15 項體驗與工作坊、新興音樂人的草地演唱。</p>
+
+    <div
+      class="d-flex justify-content-between py-2 py-md-3 border-top border-bottom border-primary border-2">
+      <button
+        type="button"
+        class="d-flex align-items-center border-0 bg-transparent">
+        <i class="me-1 icofont-star-alt-1 my-fs-5 my-fs-md-6"></i>
+        <span class="activity-card-cate serif-title">演出</span>
+      </button>
+
+      <button
+        type="button"
+        class="regModalBtn d-flex align-items-center border-0 bg-transparent position-relative">
+        <span class="activity-card-state me-1">開賣中</span>
+        <i class="icofont-rounded-double-right"></i>
+      </button>
+    </div>
+  </a>
+</li>
+  <li data-aos="fade-up" class="col-md-4">
+  <a class="card activity-card border-0 h-100" href="./event-detail.html">
+    <h4 class="eng-title my-fs-8 my-fs-xl-12 mb-2 mb-md-3">19 MAY 2023</h4>
+    <hr class="border border-primary border-3 opacity-100 mb-4 mb-md-3" />
+    <img
+      class="card-img object-fit-cover mb-2 mb-md-3"
+      src="/2023-layout-bootcamp-week6-7/assets/08-51b37f62.jpg"
+      alt="event picture" />
+
+    <h5 class="card-title mb-2 mb-md-3">疊疊樂大賽</h5>
+
+    <p class="mb-auto pb-4">來到七星潭會想到什麼呢？絕對是數也數不清的扁扁石頭吧！有這項技能卻沒有機會大展身手的你，展露頭角的機會來囉！</p>
+
+    <div
+      class="d-flex justify-content-between py-2 py-md-3 border-top border-bottom border-primary border-2">
+      <button
+        type="button"
+        class="d-flex align-items-center border-0 bg-transparent">
+        <i class="me-1 icofont-star-alt-1 my-fs-5 my-fs-md-6"></i>
+        <span class="activity-card-cate serif-title">遊戲競賽</span>
+      </button>
+
+      <button
+        type="button"
+        class="regModalBtn d-flex align-items-center border-0 bg-transparent position-relative">
+        <span class="activity-card-state me-1">開賣中</span>
+        <i class="icofont-rounded-double-right"></i>
+      </button>
+    </div>
+  </a>
+</li>
+  <li data-aos="fade-up" class="col-md-4">
+  <a class="card activity-card border-0 h-100" href="./event-detail.html">
+    <h4 class="eng-title my-fs-8 my-fs-xl-12 mb-2 mb-md-3">18 MAY 2023</h4>
+    <hr class="border border-primary border-3 opacity-100 mb-4 mb-md-3" />
+    <img
+      class="card-img object-fit-cover mb-2 mb-md-3"
+      src="/2023-layout-bootcamp-week6-7/assets/09-496f8f1c.jpg"
+      alt="event picture" />
+
+    <h5 class="card-title mb-2 mb-md-3">返老還童-制服聯誼</h5>
+
+    <p class="mb-auto pb-4">由戀愛家教「艾德溫」主辦策劃，讓各位在安排好的青春行程中擁有自然的純愛互動體驗，互相餵食餅乾、觀察對方手相，有趣的互動環節讓你/妳怦然心動！</p>
+
+    <div
+      class="d-flex justify-content-between py-2 py-md-3 border-top border-bottom border-primary border-2">
+      <button
+        type="button"
+        class="d-flex align-items-center border-0 bg-transparent">
+        <i class="me-1 icofont-star-alt-1 my-fs-5 my-fs-md-6"></i>
+        <span class="activity-card-cate serif-title">聯誼</span>
+      </button>
+
+      <button
+        type="button"
+        class="regModalBtn d-flex align-items-center border-0 bg-transparent position-relative">
+        <span class="activity-card-state me-1">檢視活動</span>
+        <i class="icofont-rounded-double-right"></i>
+      </button>
+    </div>
+  </a>
+</li>
+  <li data-aos="fade-up" class="col-md-4">
+  <a class="card activity-card border-0 h-100" href="./event-detail.html">
+    <h4 class="eng-title my-fs-8 my-fs-xl-12 mb-2 mb-md-3">19 MAY 2023</h4>
+    <hr class="border border-primary border-3 opacity-100 mb-4 mb-md-3" />
+    <img
+      class="card-img object-fit-cover mb-2 mb-md-3"
+      src="/2023-layout-bootcamp-week6-7/assets/10-27f70fc3.jpg"
+      alt="event picture" />
+
+    <h5 class="card-title mb-2 mb-md-3">野外求生17天</h5>
+
+    <p class="mb-auto pb-4">野外求生體驗，我們將在沒有水、沒有電的自然環境裡，學習各項生存技能，課程內容包含生火、水源取得及淨化、射箭、木食器製作、無具野炊、野地編繩和狩獵技能...</p>
+
+    <div
+      class="d-flex justify-content-between py-2 py-md-3 border-top border-bottom border-primary border-2">
+      <button
+        type="button"
+        class="d-flex align-items-center border-0 bg-transparent">
+        <i class="me-1 icofont-star-alt-1 my-fs-5 my-fs-md-6"></i>
+        <span class="activity-card-cate serif-title">戶外</span>
+      </button>
+
+      <button
+        type="button"
+        class="regModalBtn d-flex align-items-center border-0 bg-transparent position-relative">
+        <span class="activity-card-state me-1">開賣中</span>
+        <i class="icofont-rounded-double-right"></i>
+      </button>
+    </div>
+  </a>
+</li>
+  <li data-aos="fade-up" class="col-md-4">
+  <a class="card activity-card border-0 h-100" href="./event-detail.html">
+    <h4 class="eng-title my-fs-8 my-fs-xl-12 mb-2 mb-md-3">19 MAY 2023</h4>
+    <hr class="border border-primary border-3 opacity-100 mb-4 mb-md-3" />
+    <img
+      class="card-img object-fit-cover mb-2 mb-md-3"
+      src="/2023-layout-bootcamp-week6-7/assets/11-12a41532.jpg"
+      alt="event picture" />
+
+    <h5 class="card-title mb-2 mb-md-3">耳熟能詳音樂祭</h5>
+
+    <p class="mb-auto pb-4">對你來說聽都沒聽過的團，但是音樂一下保證跟著唱，重磅邀請各界隱藏天籟歌手、天團，不想曬太陽也可以在樹下當
+KTV 跟著唱，唱不出來服務台報到立馬退費！</p>
+
+    <div
+      class="d-flex justify-content-between py-2 py-md-3 border-top border-bottom border-primary border-2">
+      <button
+        type="button"
+        class="d-flex align-items-center border-0 bg-transparent">
+        <i class="me-1 icofont-star-alt-1 my-fs-5 my-fs-md-6"></i>
+        <span class="activity-card-cate serif-title">演出</span>
+      </button>
+
+      <button
+        type="button"
+        class="regModalBtn d-flex align-items-center border-0 bg-transparent position-relative">
+        <span class="activity-card-state me-1">開賣中</span>
+        <i class="icofont-rounded-double-right"></i>
+      </button>
+    </div>
+  </a>
+</li>
+  <li data-aos="fade-up" class="col-md-4">
+  <a class="card activity-card border-0 h-100" href="./event-detail.html">
+    <h4 class="eng-title my-fs-8 my-fs-xl-12 mb-2 mb-md-3">19 MAY 2023</h4>
+    <hr class="border border-primary border-3 opacity-100 mb-4 mb-md-3" />
+    <img
+      class="card-img object-fit-cover mb-2 mb-md-3"
+      src="/2023-layout-bootcamp-week6-7/assets/12-2a5aa552.jpg"
+      alt="event picture" />
+
+    <h5 class="card-title mb-2 mb-md-3">野營發呆大賽</h5>
+
+    <p class="mb-auto pb-4">你也是那種動不動就容易放空、神遊的人嗎？這輩子靠這技能出頭的機會來了，在恆春山林一起神遊、盡情地發呆吧！冠軍可以得到價值十萬的綿豆腐床墊一張！</p>
+
+    <div
+      class="d-flex justify-content-between py-2 py-md-3 border-top border-bottom border-primary border-2">
+      <button
+        type="button"
+        class="d-flex align-items-center border-0 bg-transparent">
+        <i class="me-1 icofont-star-alt-1 my-fs-5 my-fs-md-6"></i>
+        <span class="activity-card-cate serif-title">遊戲競賽</span>
+      </button>
+
+      <button
+        type="button"
+        class="regModalBtn d-flex align-items-center border-0 bg-transparent position-relative">
+        <span class="activity-card-state me-1">開賣中</span>
+        <i class="icofont-rounded-double-right"></i>
+      </button>
+    </div>
+  </a>
+</li>
+ 
+
+        </ul>
+      </section>
+
+      <!-- pager -->
+      <nav class="pt-8 pb-12 py-md-15">
+        <ul
+          class="pagination my-pagination serif-title flex-wrap justify-content-center gap-2">
+          <li class="page-item">
+            <a class="page-link btn btn-primary border-primary px-0" href="#">
+              <i class="icofont-arrow-left"></i>
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link btn btn-primary border-primary px-0" href="#"
+              >1</a
+            >
+          </li>
+          <li class="page-item">
+            <a
+              class="page-link btn btn-primary border-primary px-0 active"
+              href="#"
+              >2</a
+            >
+          </li>
+          <li class="page-item">
+            <a class="page-link btn btn-primary border-primary px-0" href="#"
+              >3</a
+            >
+          </li>
+          <li class="page-item">
+            <a class="page-link btn btn-primary border-primary px-0" href="#"
+              >4</a
+            >
+          </li>
+          <li class="page-item">
+            <a class="page-link btn btn-primary border-primary px-0" href="#"
+              >5</a
+            >
+          </li>
+          <li class="page-item">
+            <a class="page-link btn btn-primary border-primary px-0" href="#">
+              <i class="icofont-arrow-right"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </main>
+
+    <footer
+  class="footer d-flex justify-content-center py-6 py-md-8 border-top border-3 border-primary">
+  <p class="footer-text">© 7TAO七逃. All Rights Reserved</p>
+</footer>
+
+
+    
+  </body>
+</html>
