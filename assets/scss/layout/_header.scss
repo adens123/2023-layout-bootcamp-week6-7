@@ -34,6 +34,7 @@
     top: calc(68px + 1px);
     background-color: $body-bg;
     border-bottom: 2px solid $primary;
+    z-index: 1;
 
     @include media-breakpoint-up(md) {
       position: static;
