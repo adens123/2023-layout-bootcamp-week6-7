@@ -1,0 +1,7 @@
+.btn-primary {
+  &.active,
+  &:hover {
+    color: $warning;
+    background-color: $primary;
+  }
+}

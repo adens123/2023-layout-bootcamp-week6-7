@@ -1,0 +1,23 @@
+.topic {
+  font-family: $font-family-yeseva;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+  padding: 16px 12px;
+  border: 2px solid $primary;
+
+  @include media-breakpoint-up(md) {
+    font-size: 64px;
+    padding: 24px 32px;
+    border-width: 3px;
+  }
+
+  &-subtitle {
+    font-family: $font-family-serif;
+    font-weight: 700;
+    @include media-breakpoint-up(md) {
+      font-size: 32px;
+    }
+  }
+}

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>活動訂票網</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); %>
+
+    <main>
+      <div class="container">
+        <!-- hero section -->
+        <section
+          class="hero d-flex flex-column text-white mt-4 mb-8 mt-md-8 mb-md-12">
+          <h3
+            data-aos="fade-up"
+            class="eng-title my-fs-8 my-fs-md-15 mb-auto mt-4 ms-10 mt-md-12 ms-md-12">
+            19 MAY 2023
+          </h3>
+          <h5
+            data-aos="fade-up"
+            class="hero-title fw-bold align-self-center mb-6 mb-md-4">
+            隔牆有耳-沒有草東的派對
+          </h5>
+          <div class="d-none d-md-flex row justify-content-center mb-6">
+            <div class="col-8">
+              <p data-aos="fade-up">
+                你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！
+                帶上啤酒、野餐墊，讓我們在Live
+                House外面一起開場「沒有草東的派對」吧！
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- category section -->
+        <section class="category">
+          <ul class="row list-unstyled mb-8 mb-md-12 g-2 g-md-3">
+            <%- include("./pages/partials/category-card", {imgurl:
+            "../assets/images/cate01.svg", title: "演出"}); %> <%-
+            include("./pages/partials/category-card", {imgurl:
+            "../assets/images/cate02.svg", title: "聯誼"}); %> <%-
+            include("./pages/partials/category-card", {imgurl:
+            "../assets/images/cate03.svg", title: "展覽"}); %> <%-
+            include("./pages/partials/category-card", {imgurl:
+            "../assets/images/cate04.svg", title: "美食"}); %> <%-
+            include("./pages/partials/category-card", {imgurl:
+            "../assets/images/cate05.svg", title: "戶外"}); %>
+
+            <li data-aos="fade-up" class="col-4 col-lg-2">
+              <a
+                href="./event.html"
+                class="card card-more text-center my-fs-6 my-fs-md-12 h-100">
+                探索<br />更多
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- recent section -->
+        <section class="recent mb-8 mb-md-15">
+          <%- include("./pages/partials/topic", {title: "RECENT", subtitle:
+          "近期活動", classList: "mb-6 mb-md-8"}); %>
+
+          <ul class="row list-unstyled gy-6 gy-md-12">
+            <%- include("./pages/partials/recent-section"); %>
+          </ul>
+        </section>
+
+        <!-- online section -->
+        <section class="online mb-8 mb-md-15">
+          <%- include("./pages/partials/topic", {title: "ONLINE", subtitle:
+          "線上活動", classList: "mb-6 mb-md-8"}); %>
+
+          <div data-aos="fade-right" class="card mb-3 border-0">
+            <div class="row">
+              <div class="col-md-7 mb-3 mb-md-0">
+                <div class="card-img"></div>
+              </div>
+              <div class="col-md-5">
+                <div class="card-body d-flex flex-column h-100 p-0">
+                  <h5 class="card-title mb-md-4">切特居批踢</h5>
+                  <div class="d-flex flex-wrap gap-2 mb-3 mb-md-8">
+                    <%- include("./pages/partials/tag", {tags: ["競賽","科技",
+                    "有趣"]}); %>
+                  </div>
+
+                  <p class="card-text pb-3">
+                    最近網路上很流行的AI程式
+                    ChatGPT，可以用來聊天或是查詢、整理各種資料，不同的應用方式如雨後春筍般冒出來。
+                    這個活動讓大家把自己最有特色的使用方法提出來讓大家參考，也會投票出最有趣的用法。
+                    該讓其他人知道自己使用 ChatGPT 的姿勢才是最特別的那個了！
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-primary fw-bold my-fs-md-5 mt-auto py-4 py-md-2 w-100">
+                    <span class="me-1">查看活動詳情</span>
+                    <i class="icofont-rounded-double-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- albums section -->
+      <section class="albums">
+        <!-- banner1 / use Swiper -->
+        <%- include("./pages/partials/banner", {text:
+        `活動集錦．ALBUMS．活動集錦．ALBUMS．活動集錦．ALBUMS．活動集錦．ALBUMS．活動集錦．ALBUMS．活動集錦．ALBUMS．`,
+        addClass: ""}); %>
+
+        <div class="container px-9 px-m-3">
+          <ul class="row list-unstyled py-12 py-md-15 gy-9">
+            <li data-aos="fade-up" class="col-md-6 col-lg-3 card-box">
+              <div
+                class="card position-relative border border-primary border-2">
+                <h6
+                  class="card-title bg-white position-absolute top-0 start-50 py-2 px-4 m-0">
+                  社群活動
+                </h6>
+                <div class="card-body p-3 pb-8 p-md-4 pb-md-12">
+                  <img
+                    src="../assets/images/album/01.jpg"
+                    alt="album picture"
+                    class="card-img object-fit-cover mb-3 mb-md-4" />
+                  <p class="card-text serif-title">無聲派對-閉閉嘴dancing</p>
+                </div>
+              </div>
+            </li>
+            <li data-aos="fade-up" class="col-md-6 col-lg-3 card-box">
+              <div
+                class="card position-relative border border-primary border-2">
+                <h6
+                  class="card-title bg-white position-absolute top-0 start-50 py-2 px-4 m-0">
+                  藝文活動
+                </h6>
+                <div class="card-body p-3 pb-8 p-md-4 pb-md-12">
+                  <img
+                    src="../assets/images/album/02.jpg"
+                    alt="album picture"
+                    class="card-img object-fit-cover mb-3 mb-md-4" />
+                  <p class="card-text serif-title">拯救老店大作戰</p>
+                </div>
+              </div>
+            </li>
+            <li data-aos="fade-up" class="col-md-6 col-lg-3 card-box">
+              <div
+                class="card position-relative border border-primary border-2">
+                <h6
+                  class="card-title bg-white position-absolute top-0 start-50 py-2 px-4 m-0">
+                  自我覺察
+                </h6>
+                <div class="card-body p-3 pb-8 p-md-4 pb-md-12">
+                  <img
+                    src="../assets/images/album/03.jpg"
+                    alt="album picture"
+                    class="card-img object-fit-cover mb-3 mb-md-4" />
+                  <p class="card-text serif-title">內觀修行-部落篇</p>
+                </div>
+              </div>
+            </li>
+            <li data-aos="fade-up" class="col-md-6 col-lg-3 card-box">
+              <div
+                class="card position-relative border border-primary border-2">
+                <h6
+                  class="card-title bg-white position-absolute top-0 start-50 py-2 px-4 m-0">
+                  聯誼活動
+                </h6>
+                <div class="card-body p-3 pb-8 p-md-4 pb-md-12">
+                  <img
+                    src="../assets/images/album/04.jpg"
+                    alt="album picture"
+                    class="card-img object-fit-cover mb-3 mb-md-4" />
+                  <p class="card-text serif-title">賞櫻野餐</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- banner2  / use Swiper -->
+        <%- include("./pages/partials/banner", {text:
+        `活動集錦．ALBUMS．活動集錦．ALBUMS．活動集錦．ALBUMS．活動集錦．ALBUMS．活動集錦．ALBUMS．活動集錦．ALBUMS．`,
+        addClass: ""}); %>
+      </section>
+
+      <!-- contact section -->
+      <section class="contact container pt-8 pb-12 py-md-15">
+        <div data-aos="fade-up" class="card border-0">
+          <div class="row g-0">
+            <div class="col-md-6 d-flex flex-column mb-6 mb-md-0">
+              <div
+                class="card-header bg-body border border-primary border-2 py-4 px-3 px-md-8 mr_2">
+                <h3 class="my-fs-6 my-fs-md-8">#FOLLOW US</h3>
+              </div>
+              <div
+                class="card-body flex-grow-1 border border-primary border-2 border-top-0 py-4 px-3 p-md-8 mr_2">
+                <p class="card-text text-black mb-5 mb-md-9">
+                  想第一時間獲得新奇有趣的活動資訊？<br />
+                  追蹤我們的社群吧！<br />
+                  也歡迎你聯繫我們，提供好玩有趣的活動企劃。
+                </p>
+                <ul class="list-group list-group-flush">
+                  <li
+                    class="list-group-item d-flex align-items-center p-0 mb-4 border-0">
+                    <div class="flex-shrink-0">
+                      <i class="icofont-ui-email bg-primary text-white p-2"></i>
+                    </div>
+                    <a
+                      href="mailto:7tao.event@gmail.com"
+                      class="flex-grow-1 ms-4 hover-underline">
+                      7tao.event@gmail.com
+                    </a>
+                  </li>
+                  <li
+                    class="list-group-item d-flex align-items-center p-0 mb-4 border-0">
+                    <div class="flex-shrink-0">
+                      <i class="icofont-phone bg-primary text-white p-2"></i>
+                    </div>
+                    <a
+                      href="tet:09123123123"
+                      class="flex-grow-1 ms-4 hover-underline">
+                      09123123123
+                    </a>
+                  </li>
+                  <li class="list-group-item d-flex align-items-center p-0">
+                    <div class="flex-shrink-0">
+                      <i class="icofont-facebook bg-primary text-white p-2"></i>
+                    </div>
+                    <a href="#" class="flex-grow-1 ms-4 hover-underline">
+                      7TAO七逃
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <form
+              class="col-md-6 d-flex flex-column needs-validation"
+              novalidate>
+              <div
+                class="card-header bg-body border border-primary border-2 py-4 px-3 px-md-8">
+                <h3 class="my-fs-6 my-fs-md-8">SUBSCRIBE US</h3>
+              </div>
+              <div
+                class="card-body flex-grow-1 border border-primary border-2 border-top-0 border-bottom-0 py-4 px-3 p-md-8">
+                <p class="card-text text-black mb-4 mb-md-8">
+                  訂閱電子報送折價券！<br />
+                  定期精選文章資訊及最新優惠資訊，<br />
+                  還不通通給我訂閱起來？
+                </p>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control py-4 px-6 border border-primary border-2"
+                    placeholder="輸入Email"
+                    required />
+                  <div class="invalid-feedback">請輸入Email</div>
+                </div>
+              </div>
+              <div class="card-footer p-0">
+                <button
+                  type="submit"
+                  class="btn btn-primary fw-bold my-fs-md-5 mt-auto py-4 py-md-2 w-100">
+                  <span class="me-1">確認訂閱</span>
+                  <i class="icofont-rounded-double-right"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- slogan section -->
+      <section
+        data-aos="fade-up"
+        class="slogan border-top border-primary border-3 py-12 py-md-15">
+        <h3 class="slogan-title text-center mb-3 mb-md-4">
+          此刻打盹，你將做夢；此刻學習，你將圓夢
+        </h3>
+        <p class="slogan-text serif-title text-center">——我也不知道誰說的</p>
+      </section>
+    </main>
+
+    <%- include('./layout/footer'); %>
+
+    <script type="module" src="../main.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+      });
+    </script>
+  </body>
+</html>

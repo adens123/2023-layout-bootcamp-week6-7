@@ -1,0 +1,54 @@
+.header {
+  border-bottom: 2px solid $primary;
+
+  @include media-breakpoint-up(md) {
+    border-width: 3px;
+  }
+
+  &-img {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    @include media-breakpoint-up(md) {
+      width: 53px;
+      height: 53px;
+    }
+  }
+
+  .input-group {
+    width: 207px;
+    @include media-breakpoint-up(md) {
+      width: 335px;
+    }
+  }
+
+  .navbar-nav {
+    justify-content: flex-end;
+  }
+
+  .navbar-collapse {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: calc(68px + 1px);
+    background-color: $body-bg;
+    border-bottom: 2px solid $primary;
+
+    @include media-breakpoint-up(md) {
+      position: static;
+      border-bottom: none;
+    }
+  }
+}
+
+.btn-search {
+  @extend %main-bg;
+}
+
+.login {
+  font-size: 18px;
+  a {
+    @extend %main-hover;
+  }
+}

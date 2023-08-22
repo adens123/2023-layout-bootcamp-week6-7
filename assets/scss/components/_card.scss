@@ -1,0 +1,40 @@
+.activity-card {
+  transition: 0.25s;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px 10px #504402;
+  }
+
+  .card-img {
+    height: 210px;
+
+    @include media-breakpoint-up(md) {
+      height: 255px;
+    }
+  }
+
+  .card-title {
+    font-size: 18px;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 24px;
+    }
+  }
+
+  &-cate,
+  &-state {
+    color: $black;
+    font-weight: 700;
+    transition: 0.25s;
+  }
+
+  &-cate:hover {
+    text-decoration: underline;
+  }
+
+  &-state:hover {
+    background-color: $warning;
+    border-radius: 100px;
+  }
+}

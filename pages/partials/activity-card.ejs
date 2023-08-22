@@ -1,0 +1,31 @@
+<li data-aos="fade-up" class="col-md-4">
+  <a class="card activity-card border-0 h-100" href="./event-detail.html">
+    <h4 class="eng-title my-fs-8 my-fs-xl-12 mb-2 mb-md-3"><%= item.date %></h4>
+    <hr class="border border-primary border-3 opacity-100 mb-4 mb-md-3" />
+    <img
+      class="card-img object-fit-cover mb-2 mb-md-3"
+      src="<%= item.imgurl %>"
+      alt="event picture" />
+
+    <h5 class="card-title mb-2 mb-md-3"><%= item.title %></h5>
+
+    <p class="mb-auto pb-4"><%= item.text %></p>
+
+    <div
+      class="d-flex justify-content-between py-2 py-md-3 border-top border-bottom border-primary border-2">
+      <button
+        type="button"
+        class="d-flex align-items-center border-0 bg-transparent">
+        <i class="me-1 icofont-star-alt-1 my-fs-5 my-fs-md-6"></i>
+        <span class="activity-card-cate serif-title"><%= item.cate %></span>
+      </button>
+
+      <button
+        type="button"
+        class="regModalBtn d-flex align-items-center border-0 bg-transparent position-relative">
+        <span class="activity-card-state me-1"><%= item.state %></span>
+        <i class="icofont-rounded-double-right"></i>
+      </button>
+    </div>
+  </a>
+</li>

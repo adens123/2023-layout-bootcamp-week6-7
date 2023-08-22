@@ -1,0 +1,15 @@
+.my-swiper {
+  .swiper {
+    &-wrapper {
+      transition-timing-function: linear;
+    }
+
+    &-slide {
+      letter-spacing: 1.6px;
+
+      @include media-breakpoint-up(md) {
+        letter-spacing: 3.2px;
+      }
+    }
+  }
+}

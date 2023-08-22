@@ -1,0 +1,12 @@
+form {
+  .btn-submit {
+    font-size: 18px;
+    @include media-breakpoint-up(md) {
+      font-size: 20px;
+    }
+  }
+}
+
+.form-title {
+  letter-spacing: 1.2px;
+}

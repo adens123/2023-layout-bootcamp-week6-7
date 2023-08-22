@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EVENT 所有活動 | 活動訂票網</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); %>
+
+    <main class="container">
+      <!-- topic -->
+      <%- include("./pages/partials/topic", {title: "EVENT", subtitle:
+      "所有活動", classList: "mt-4 mb-3 my-md-8"}); %>
+
+      <!-- tags -->
+      <div class="d-flex flex-wrap gap-2 mb-8">
+        <%- include("./pages/partials/tag", {tags: ["演出", "音樂", "舞蹈",
+        "戲劇", "音樂會", "課程講座", "社群活動", "展覽",
+        "研討會","電影","電音派對","遊戲競賽","親子","藝文活動","運動","交通旅遊","美食","資訊科技","聯誼","戶外","線上活動"]});
+        %>
+      </div>
+
+      <!-- events -->
+      <section>
+        <ul class="row list-unstyled gy-6 gy-md-12">
+          <%- include("./pages/partials/events-section"); %>
+        </ul>
+      </section>
+
+      <!-- pager -->
+      <nav class="pt-8 pb-12 py-md-15">
+        <ul
+          class="pagination my-pagination serif-title flex-wrap justify-content-center gap-2">
+          <li class="page-item">
+            <a class="page-link btn btn-primary border-primary px-0" href="#">
+              <i class="icofont-arrow-left"></i>
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link btn btn-primary border-primary px-0" href="#"
+              >1</a
+            >
+          </li>
+          <li class="page-item">
+            <a
+              class="page-link btn btn-primary border-primary px-0 active"
+              href="#"
+              >2</a
+            >
+          </li>
+          <li class="page-item">
+            <a class="page-link btn btn-primary border-primary px-0" href="#"
+              >3</a
+            >
+          </li>
+          <li class="page-item">
+            <a class="page-link btn btn-primary border-primary px-0" href="#"
+              >4</a
+            >
+          </li>
+          <li class="page-item">
+            <a class="page-link btn btn-primary border-primary px-0" href="#"
+              >5</a
+            >
+          </li>
+          <li class="page-item">
+            <a class="page-link btn btn-primary border-primary px-0" href="#">
+              <i class="icofont-arrow-right"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </main>
+
+    <%- include('./layout/footer'); %>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+.badge {
+  position: relative;
+  &-tag {
+    color: #000;
+    font-size: 14px;
+    transition: 0.3s;
+
+    @include media-breakpoint-up(md) {
+      font-size: 16px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -1px;
+      bottom: -1px;
+      left: -1px;
+      width: 4px;
+      background-color: #000;
+      transition: 0.3s;
+    }
+
+    &:hover {
+      color: #fff;
+      background-color: #000;
+
+      &::before {
+        background-color: $warning;
+      }
+    }
+  }
+}
