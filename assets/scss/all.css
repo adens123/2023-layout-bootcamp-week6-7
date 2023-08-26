@@ -10189,6 +10189,21 @@ textarea.form-control-lg {
   .d-sm-none {
     display: none !important;
   }
+  .border-sm-1 {
+    border-width: 1px !important;
+  }
+  .border-sm-2 {
+    border-width: 2px !important;
+  }
+  .border-sm-3 {
+    border-width: 3px !important;
+  }
+  .border-sm-4 {
+    border-width: 4px !important;
+  }
+  .border-sm-5 {
+    border-width: 5px !important;
+  }
   .flex-sm-fill {
     flex: 1 1 auto !important;
   }
@@ -11351,6 +11366,21 @@ textarea.form-control-lg {
   }
   .d-md-none {
     display: none !important;
+  }
+  .border-md-1 {
+    border-width: 1px !important;
+  }
+  .border-md-2 {
+    border-width: 2px !important;
+  }
+  .border-md-3 {
+    border-width: 3px !important;
+  }
+  .border-md-4 {
+    border-width: 4px !important;
+  }
+  .border-md-5 {
+    border-width: 5px !important;
   }
   .flex-md-fill {
     flex: 1 1 auto !important;
@@ -12515,6 +12545,21 @@ textarea.form-control-lg {
   .d-lg-none {
     display: none !important;
   }
+  .border-lg-1 {
+    border-width: 1px !important;
+  }
+  .border-lg-2 {
+    border-width: 2px !important;
+  }
+  .border-lg-3 {
+    border-width: 3px !important;
+  }
+  .border-lg-4 {
+    border-width: 4px !important;
+  }
+  .border-lg-5 {
+    border-width: 5px !important;
+  }
   .flex-lg-fill {
     flex: 1 1 auto !important;
   }
@@ -13677,6 +13722,21 @@ textarea.form-control-lg {
   }
   .d-xl-none {
     display: none !important;
+  }
+  .border-xl-1 {
+    border-width: 1px !important;
+  }
+  .border-xl-2 {
+    border-width: 2px !important;
+  }
+  .border-xl-3 {
+    border-width: 3px !important;
+  }
+  .border-xl-4 {
+    border-width: 4px !important;
+  }
+  .border-xl-5 {
+    border-width: 5px !important;
   }
   .flex-xl-fill {
     flex: 1 1 auto !important;
@@ -14841,6 +14901,21 @@ textarea.form-control-lg {
   .d-xxl-none {
     display: none !important;
   }
+  .border-xxl-1 {
+    border-width: 1px !important;
+  }
+  .border-xxl-2 {
+    border-width: 2px !important;
+  }
+  .border-xxl-3 {
+    border-width: 3px !important;
+  }
+  .border-xxl-4 {
+    border-width: 4px !important;
+  }
+  .border-xxl-5 {
+    border-width: 5px !important;
+  }
   .flex-xxl-fill {
     flex: 1 1 auto !important;
   }
@@ -15993,6 +16068,7 @@ textarea.form-control-lg {
 body * {
   margin: 0;
   padding: 0;
+  outline: 1px solid goldenrod;
 }
 
 body {
@@ -16043,12 +16119,6 @@ a.nav-link {
   line-height: normal;
 }
 
-@media (min-width: 768px) {
-  .border-md-3 {
-    border-width: 3px;
-  }
-}
-
 .hover-underline:hover {
   text-decoration: underline;
 }
@@ -16062,12 +16132,40 @@ a.nav-link {
   background-color: #030303;
 }
 
-.card {
+.activity-card {
   transition: 0.25s;
 }
-.card:hover {
+.activity-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 0 10px 10px #504402;
+}
+.activity-card .card-img {
+  height: 210px;
+}
+@media (min-width: 768px) {
+  .activity-card .card-img {
+    height: 255px;
+  }
+}
+.activity-card .card-title {
+  font-size: 18px;
+}
+@media (min-width: 992px) {
+  .activity-card .card-title {
+    font-size: 24px;
+  }
+}
+.activity-card-cate, .activity-card-state {
+  color: #000;
+  font-weight: 700;
+  transition: 0.25s;
+}
+.activity-card-cate:hover {
+  text-decoration: underline;
+}
+.activity-card-state:hover {
+  background-color: #fbff22;
+  border-radius: 100px;
 }
 
 .topic {
@@ -16199,6 +16297,7 @@ form .btn-submit {
   top: 69px;
   background-color: #f3f1e5;
   border-bottom: 2px solid #030303;
+  z-index: 1;
 }
 @media (min-width: 768px) {
   .header .navbar-collapse {
@@ -16266,42 +16365,13 @@ form .btn-submit {
   }
 }
 
-.activity-card .card-img {
-  height: 210px;
-}
-@media (min-width: 768px) {
-  .activity-card .card-img {
-    height: 255px;
-  }
-}
-.activity-card .card-title {
-  font-size: 18px;
-}
-@media (min-width: 992px) {
-  .activity-card .card-title {
-    font-size: 24px;
-  }
-}
-.activity-card-cate, .activity-card-state {
-  color: #000;
-  font-weight: 700;
-  transition: 0.25s;
-}
-.activity-card-cate:hover {
-  text-decoration: underline;
-}
-.activity-card-state:hover {
-  background-color: #fbff22;
-  border-radius: 100px;
-}
-
 .online .card-img {
   height: 158px;
   background: url("/assets/images/event/online.jpg") no-repeat 0% 33%/100% auto;
 }
 @media (min-width: 768px) {
   .online .card-img {
-    height: 317px;
+    height: 100%;
   }
 }
 .online .card-title {
@@ -16348,5 +16418,65 @@ form .btn-submit {
 @media (min-width: 768px) {
   .slogan-text {
     font-size: 18px;
+  }
+}
+
+.eventDate-card {
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+@media (min-width: 768px) {
+  .eventDate-card {
+    margin-top: 30px;
+  }
+}
+.eventDate-card .yyyy {
+  padding: 25px 0px;
+}
+@media (min-width: 992px) {
+  .eventDate-card .yyyy {
+    padding: 32px 0px;
+  }
+}
+.eventDate-card .mmdd {
+  font-size: 22px;
+}
+@media (min-width: 992px) {
+  .eventDate-card .mmdd {
+    font-size: 48px;
+  }
+}
+.eventDate-card .hh::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  transform: translate(-50%, -50%) rotate(-55deg);
+  border-bottom: 2px solid #000;
+}
+@media (min-width: 1200px) {
+  .eventDate-card .hh::before {
+    width: 100px;
+  }
+}
+.eventDate-card .img-fluid {
+  width: 100%;
+  max-height: 550px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.eventContent-card .card-title {
+  letter-spacing: 1.6px;
+}
+@media (min-width: 768px) {
+  .eventContent-card .card-title {
+    letter-spacing: 3px;
+  }
+}
+@media (min-width: 768px) {
+  .eventContent-card .card-subtitle {
+    font-size: 22px;
   }
 }/*# sourceMappingURL=all.css.map */

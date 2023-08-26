@@ -25,11 +25,18 @@
   line-height: normal;
 }
 
-// border
-.border-md-3 {
-  @include media-breakpoint-up(md) {
-    border-width: 3px;
-  }
+// font size
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+// font color
+.gray-dark-1 {
+  color: $gray-dark-1;
 }
 
 // hover
@@ -40,4 +47,37 @@
 // margin
 .mr_2 {
   margin-right: -2px;
+}
+
+// letter-spacing
+.l-spacing-1_2 {
+  letter-spacing: 1.2px;
+}
+
+.l-spacing-1_6 {
+  letter-spacing: 1.6px;
+}
+
+.l-spacing-md-1_6 {
+  @include media-breakpoint-up(md) {
+    letter-spacing: 1.6px;
+  }
+}
+
+.l-spacing-md-2_4 {
+  @include media-breakpoint-up(md) {
+    letter-spacing: 2.4px;
+  }
+}
+
+// payment page
+.reminder {
+  font-size: 14px;
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+    position: relative;
+    left: 50%;
+    width: 674px;
+    transform: translateX(-50%);
+  }
 }

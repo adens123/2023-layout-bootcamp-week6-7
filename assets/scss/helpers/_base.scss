@@ -1,14 +1,13 @@
-@import "https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap";
-@import "https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&display=swap";
-@import "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap";
-@import "/assets/scss/helpers/icofont/icofont.min.css";
-@import "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css";
-// @import "https://unpkg.com/aos@2.3.1/dist/aos.css";
+@import 'https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap';
+@import '/assets/scss/vendors/icofont/icofont.min.css';
+@import 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css';
 
 body * {
   margin: 0;
   padding: 0;
-  // outline: 1px solid darkorchid;
+  // outline: 1px solid goldenrod;
 }
 
 body {
@@ -30,6 +29,11 @@ h6,
 .h6 {
   font-family: $font-family-serif;
   line-height: normal;
+}
+
+input:not([type='checkbox radio']).form-control {
+  border: 2px solid $primary;
+  padding: 8px 16px;
 }
 
 a.nav-link {

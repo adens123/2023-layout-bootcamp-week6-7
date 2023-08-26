@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>付款結果 | 活動訂票網</title>
+  </head>
+
+  <body>
+    <%- include('./layout/header'); %>
+
+    <main class="container">
+      <div class="row justify-content-center position-relative">
+        <div class="col-md-6 position-relative">
+          <!-- step by step  section-->
+          <section class="mb-6 mb-md-12">
+            <div
+              class="com-steper d-flex justify-content-between text-center position-relative mt-10 mt-md-21">
+              <div class="serif-title">
+                <button
+                  type="button"
+                  class="btn btn-primary my-fs-md-5 p-0 active mb-1 mb-md-2">
+                  <i class="icofont-verification-check"></i>
+                </button>
+                <p class="">訂單確認</p>
+              </div>
+              <div class="serif-title">
+                <button
+                  type="button"
+                  class="btn btn-primary my-fs-md-5 p-0 active mb-1 mb-md-2">
+                  <i class="icofont-verification-check"></i>
+                </button>
+                <p class="">結帳付款</p>
+              </div>
+              <div class="serif-title">
+                <button
+                  type="button"
+                  class="btn btn-primary my-fs-md-5 p-0 active mb-1 mb-md-2">
+                  3
+                </button>
+                <p class="">訂購結果</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- payment result -->
+          <section class="mb-12 mb-md-15">
+            <h2
+              class="d-flex flex-column align-items-center my-fs-6 my-fs-lg-8 l-spacing-1_2 l-spacing-md-1_6 mb-8">
+              <i
+                class="icofont-check-circled my-fs-8 my-fs-md-12 mb-4 mb-md-2"></i>
+              訂購成功
+            </h2>
+
+            <ul class="list-group mb-4">
+              <li
+                class="list-group-item d-flex justify-content-between px-0 py-2 border-start-0 border-end-0 border-bottom-0 border-primary border-2">
+                <h6>訂單編號</h6>
+                <span>892746123</span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between px-0 py-2 border-start-0 border-end-0 border-top border-primary">
+                <h6>訂購時間</h6>
+                <time>2023/04/28 14:30</time>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between px-0 py-2 border-start-0 border-end-0 border-primary">
+                <h6>票券</h6>
+                <span>改頭換面票（含大改造）$8000</span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between px-0 py-2 border-start-0 border-end-0 border-primary">
+                <h6>取票序號</h6>
+                <span class="text-danger fw-bold">95G54J4434</span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between px-0 py-2 border-start-0 border-end-0 border-primary">
+                <h6>取票號碼</h6>
+                <span class="text-danger fw-bold">04597101</span>
+              </li>
+            </ul>
+            <p class="gray-dark-1">
+              請至 7-Eleven 完成取票，請於 ibon
+              點選【購票/取票/訂房】>【售票系統】>【取票】>【拓元售票系統】。<br />
+              若您未前往取票，本筆交易仍視為完成，不可取消訂單。<br />
+              若需退票，請按照退票辦法進行申請。
+            </p>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <%- include('./layout/footer'); %>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

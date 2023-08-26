@@ -5,6 +5,10 @@ form {
       font-size: 20px;
     }
   }
+
+  &.was-validated .form-control:invalid {
+    border-color: $danger;
+  }
 }
 
 .form-title {

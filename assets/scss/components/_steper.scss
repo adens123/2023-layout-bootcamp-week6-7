@@ -1,0 +1,27 @@
+.com-steper {
+  .btn {
+    width: 32px;
+    height: 32px;
+
+    @include media-breakpoint-up(md) {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    height: 1px;
+    background-color: $black;
+    width: 85%;
+    transform: translateX(-50%);
+    z-index: -1;
+
+    @include media-breakpoint-up(md) {
+      top: 33%;
+    }
+  }
+}

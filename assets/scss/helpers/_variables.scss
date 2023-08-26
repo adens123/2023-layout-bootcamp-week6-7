@@ -13,9 +13,9 @@ $body-bg: $gray-light-1;
 
 $link-decoration: none;
 
-$font-family-yeseva: "Yeseva One", cursive;
-$font-family-serif: "Noto Serif TC", serif;
-$font-family-sans: "Noto Sans TC", sans-serif;
+$font-family-yeseva: 'Yeseva One', cursive;
+$font-family-serif: 'Noto Serif TC', serif;
+$font-family-sans: 'Noto Sans TC', sans-serif;
 
 $enable-rounded: false;
 
@@ -38,4 +38,5 @@ $spacers: (
   13: $spacer * 3.25,
   14: $spacer * 3.5,
   15: $spacer * 3.75,
+  21: $spacer * 5.25,
 );
