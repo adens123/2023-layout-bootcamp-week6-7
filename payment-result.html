@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>會員登入 | 活動訂票網</title>
+    <title>付款結果 | 活動訂票網</title>
     <script type="module" crossorigin src="/2023-layout-bootcamp-week6-7/assets/main-cfcda3c1.js"></script>
     <link rel="stylesheet" href="/2023-layout-bootcamp-week6-7/assets/main-9df9bf55.css">
   </head>
-  <body class="vh-100">
+
+  <body>
     <header class="header">
   <div class="container">
     <nav class="navbar navbar-expand-md position-static py-3 py-md-6">
@@ -98,49 +99,83 @@
 </header>
 
 
-    <main class="container h-75">
-      <div class="row justify-content-center mt-6 mt-md-15">
-        <div class="col-md-4">
-          <form class="d-flex flex-column needs-validation" novalidate>
-            <img
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANgSURBVHgB7ZvdddpAEIUHBM+og2w6UAm4EzqIO4g7cDrAHTgdkA6wK0AdGL/xACh38K7OsJHE2hHMSvCds0cSEovmzuzfSBDdUCW1RY0h6ZKhGFJEVYAkSQxKRoqMSJGiKAwpNwFVAQaDAXv/jRRRFQBMEAXfSBFtAQyigK4WdIAFF1JEcxSQnZ8hJTQFMBQBUUTAaDQypISaADwJcvt2PqCCmgAwOq3avzSxdII3AUiJKATAZGhCSqgJAKNVF0GO1gRArz6jz43t0uuGwpna32qF1gSAR3Pc2Go4HP6k85Ch/gWX3W73h2LE3iDP71d0wquY/CzdWsBeXwtE/eGuxfceKFbG43EmjHprClU2OkCAVIhaQIgVxQ5u8l4YVtQ1iQABjLwG9XDixFAXkF6zYftYcU2TAMY7X7TZ8V2ClMPVM2AuL7BNpGwu4tQ/xkfd7hswFSIs3Envc5cUqTL+F3UYUxcJVQLA2Bfv8yfqAZUi+AKgPNdFSx9gEZYVRteVJ+ojFV6uKnO6IKE5aSO27M3DQ03eIpkxkdf42R276PnqwmeN+tbyGPW547U9ft/v94d9u83tObdtxAmQWgMydEQZG4XCT21S/IChDgM7cl6n0IeYrxCJ97m88GflYgiG87STrIqpULrz2JTbmiOWbcSUvbQttAmk+JLhijjEbYWyCZRh7s7J73517W/D/8gR1ptMbo/LJsBO4/Nw5uHcZrPJKSa4dw/oBJ+pjyBa5qHDIA+Z1JWFTwj+4qhmOPSj42ROoRP4nscx976VU+HeiQBjHz3jS4OqBLCfL3ohAidC6oxnkvrlcF0kRJFFDgI3PGsy3l6z8gw8gpfBXV0cGendKuOZJCAnyIkQT8h7ih3PMPZaGnDdqqG+mRSUE68UK7Ld40YbvZUcJzyXJ6qWOYVom4IRN3jSS15vH2SUaxLYTqkl2nw0NsU8/A5Pbe7oY6XVOtvt9gH1f9d8oaI1ENJyqPtNSmi/LO1Qe1tUU4BymYuQficlohCAAlJX5+ImACkhU26a6Tc1ATCc5W5fpLkujmYTyN0Oxver7AMkOV0jfjJEA+0/TOSkjPZ/hvxHXxdHtQ/AA41XbNRmgYx2E+AIyEkR7SZwlmXzZ0hIEXifR4KNfWJ7lfzPuwM32uAvhWS8ZdBSZJIAAAAASUVORK5CYII="
-              alt="logo"
-              width="32"
-              height="32"
-              class="mx-auto mb-4" />
-            <h2 class="form-title my-fs-6 text-center mb-2">會員登入</h2>
-            <div class="mb-4">
-              <label for="account" class="form-label text-black mb-2"
-                >帳號</label
-              >
-              <input
-                type="text"
-                class="form-control my-fs-5 py-2 px-4"
-                id="account"
-                placeholder="請輸入帳號"
-                required />
-              <div class="invalid-feedback">請輸入帳號</div>
+    <main class="container">
+      <div class="row justify-content-center position-relative">
+        <div class="col-md-6 position-relative">
+          <!-- step by step  section-->
+          <section class="mb-6 mb-md-12">
+            <div
+              class="com-steper d-flex justify-content-between text-center position-relative mt-10 mt-md-21">
+              <div class="serif-title">
+                <button
+                  type="button"
+                  class="btn btn-primary my-fs-md-5 p-0 active mb-1 mb-md-2">
+                  <i class="icofont-verification-check"></i>
+                </button>
+                <p class="">訂單確認</p>
+              </div>
+              <div class="serif-title">
+                <button
+                  type="button"
+                  class="btn btn-primary my-fs-md-5 p-0 active mb-1 mb-md-2">
+                  <i class="icofont-verification-check"></i>
+                </button>
+                <p class="">結帳付款</p>
+              </div>
+              <div class="serif-title">
+                <button
+                  type="button"
+                  class="btn btn-primary my-fs-md-5 p-0 active mb-1 mb-md-2">
+                  3
+                </button>
+                <p class="">訂購結果</p>
+              </div>
             </div>
-            <div class="mb-8">
-              <label for="password" class="form-label text-black mb-2"
-                >密碼</label
-              >
-              <input
-                type="password"
-                class="form-control my-fs-5 py-2 px-4"
-                id="password"
-                placeholder="請輸入密碼"
-                required />
-              <div class="invalid-feedback">請輸入密碼</div>
-            </div>
+          </section>
 
-            <button
-              type="submit"
-              class="btn btn-primary btn-submit fw-bold py-4 py-md-2 w-100">
-              <span class="me-1">登入</span>
-              <i class="icofont-rounded-double-right"></i>
-            </button>
-          </form>
+          <!-- payment result -->
+          <section class="mb-12 mb-md-15">
+            <h2
+              class="d-flex flex-column align-items-center my-fs-6 my-fs-lg-8 l-spacing-1_2 l-spacing-md-1_6 mb-8">
+              <i
+                class="icofont-check-circled my-fs-8 my-fs-md-12 mb-4 mb-md-2"></i>
+              訂購成功
+            </h2>
+
+            <ul class="list-group mb-4">
+              <li
+                class="list-group-item d-flex justify-content-between px-0 py-2 border-start-0 border-end-0 border-bottom-0 border-primary border-2">
+                <h6>訂單編號</h6>
+                <span>892746123</span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between px-0 py-2 border-start-0 border-end-0 border-top border-primary">
+                <h6>訂購時間</h6>
+                <time>2023/04/28 14:30</time>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between px-0 py-2 border-start-0 border-end-0 border-primary">
+                <h6>票券</h6>
+                <span>改頭換面票（含大改造）$8000</span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between px-0 py-2 border-start-0 border-end-0 border-primary">
+                <h6>取票序號</h6>
+                <span class="text-danger fw-bold">95G54J4434</span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between px-0 py-2 border-start-0 border-end-0 border-primary">
+                <h6>取票號碼</h6>
+                <span class="text-danger fw-bold">04597101</span>
+              </li>
+            </ul>
+            <p class="gray-dark-1">
+              請至 7-Eleven 完成取票，請於 ibon
+              點選【購票/取票/訂房】>【售票系統】>【取票】>【拓元售票系統】。<br />
+              若您未前往取票，本筆交易仍視為完成，不可取消訂單。<br />
+              若需退票，請按照退票辦法進行申請。
+            </p>
+          </section>
         </div>
       </div>
     </main>
