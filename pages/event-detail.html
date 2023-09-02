@@ -56,13 +56,13 @@
             <p class="card-subtitle mt-0 mb-6">
               穿上制服，無年齡限制，一起走上街頭、尋找青春才有的純愛心動！
             </p>
-            <div class="d-none d-md-flex gap-2 mb-12">
+            <ul class="list-unstyled d-none d-md-flex gap-2 mb-12">
               <%- include("./pages/partials/tag", {tags: ["聯誼","美食", "戶外",
               "交通旅遊"]}); %>
-            </div>
+            </ul>
           </div>
           <div
-            class="card-body border border-primary border-2 border-md-3 p-md-8">
+            class="card-body bg-gray-light-2 border border-primary border-2 border-md-3 p-md-8">
             <p class="card-text mb-4">想回到過去？試著讓故事繼續？</p>
             <p class="card-text mb-4">
               由戀愛家教「艾德溫」主辦策劃，讓各位在安排好的青春行程中擁有自然的純愛互動體驗，互相餵食餅乾、觀察對方手相，有趣的互動環節讓你/妳怦然心動！制服由主辦方提供，妝髮造型可額外加價購！
@@ -80,7 +80,7 @@
         <%- include("./pages/partials/topic", {title: "TICKET", subtitle:
         "購票資訊", classList: "mb-2 mb-md-4"}); %>
 
-        <table class="table ticketTable text-left text-nowrap">
+        <table class="table table-hover ticketTable text-left text-nowrap">
           <thead>
             <tr>
               <th scope="col">活動日期</th>

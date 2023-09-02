@@ -24,18 +24,32 @@
 
   &-cate,
   &-state {
+    position: relative;
     color: $black;
     font-weight: 700;
     transition: 0.25s;
+    z-index: 0;
   }
 
   &-cate:hover {
     text-decoration: underline;
   }
 
-  &-state:hover {
+  &-state::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -9px;
+    width: 29px;
+    height: 29px;
+    background-color: none;
+    border-radius: 50%;
+    z-index: -1;
+    transition: 0.25s;
+  }
+
+  &-state:hover::before {
     background-color: $warning;
-    border-radius: 100px;
   }
 }
 
